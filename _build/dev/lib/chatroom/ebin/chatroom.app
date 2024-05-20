@@ -1,0 +1,10 @@
+{application,chatroom,
+             [{optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,runtime_tools,
+                             shoehorn,ring_logger,toolshed,nerves_runtime]},
+              {description,"chatroom"},
+              {modules,['Elixir.Chatroom.Application','Elixir.Chatroom.Chat',
+                        'Elixir.Crdt.Treedoc']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.Chatroom.Application',[]}}]}.

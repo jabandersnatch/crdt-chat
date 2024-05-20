@@ -1,0 +1,13 @@
+{application,toolshed,
+             [{optional_applications,[nerves_runtime]},
+              {applications,[kernel,stdlib,elixir,iex,logger,nerves_runtime]},
+              {description,"Use Toolshed for more IEx helpers"},
+              {modules,['Elixir.Toolshed','Elixir.Toolshed.Impl',
+                        'Elixir.Toolshed.OneBeam',
+                        'Elixir.Toolshed.Top.Processes',
+                        'Elixir.Toolshed.Top.Report',
+                        'Elixir.Toolshed.Top.Server',
+                        'Elixir.Toolshed.Watcher']},
+              {registered,[]},
+              {vsn,"0.3.1"},
+              {env,[{speed_test_url,<<"http://dl.nerves-project.org/speed_test/10MB.bin">>}]}]}.
